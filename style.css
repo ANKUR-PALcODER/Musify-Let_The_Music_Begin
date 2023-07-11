@@ -74,7 +74,7 @@ body {
     background-color: rgb(208, 209, 212);
     margin: 1% auto;
     padding-bottom: 0.1rem;
-    display: grid;
+    display: none;
     grid-template-rows: 12% auto;
     border-radius: 20px;
 }
