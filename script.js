@@ -15,7 +15,7 @@ let songlist = Array.from(document.getElementsByClassName('songs'));
 let songplay = Array.from(document.getElementsByClassName('masterPlay'));
 
 let songs = [
-    { name: 'K/DA POP/STARS', filepath: 'song/1.mp3', coverpath: './covers/1.jpg', duration : '3.22' },
+    { name: 'POP/STARS', filepath: 'songs/1.mp3', coverpath: './covers/1.jpg', duration : '3.22' },
     { name: 'Summer Feelings', filepath: 'songs/2.mp3', coverpath: 'covers/3.jpg', duration : '2.40' },
     { name: 'Main Dhoondne Ko', filepath: 'songs/3.mp3', coverpath: 'covers/4.jpg', duration : '4.32' },
     { name: 'Brave Shine', filepath: 'songs/4.mp3', coverpath: 'covers/5.jpg', duration : '3.52' },
