@@ -126,7 +126,7 @@ Array.from(document.getElementsByClassName('songfont')).forEach((element)=>{
         // console.log("index"+ songIndex);
         e.target.classList.remove('fa-play-circle');
         e.target.classList.add('fa-pause-circle');
-        audioelement.currentTime = 0;
+        // audioelement.currentTime = 0;
         audioelement.src=`songs/${songIndex}.mp3`;
         audioelement.play();
         // console.log(element);
