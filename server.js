@@ -9,5 +9,6 @@ app.get('/', function(req, res) {
 });
 
 console.log(__dirname);
-app.listen(port);
-console.log('Server started at http://localhost:' + port);
+app.listen(port,()=>{
+  console.log('Server started at http://localhost:' + port);
+});

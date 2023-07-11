@@ -4,8 +4,8 @@ console.log('Welcome to Musify');
 let songIndex = 1;
 let songname = document.getElementById('songname');
 console.log(songname.innerText);
-let audioelement = new Audio('./songs/3.mp3');
-console.log(audioelement);
+let audioelement = new Audio('');
+console.log(audioelement.src);
 let masterPlay = document.getElementById('masterplay');
 // console.log(masterPlay);
 let progress = document.getElementById('progress');
@@ -28,6 +28,7 @@ let songs = [
 
 // Master Play/Pause
 masterPlay.addEventListener('click',()=>{
+
     if (audioelement.paused || audioelement.currentTime<=0) {
         audioelement.play();
         masterPlay.classList.remove('fa-play-circle');
