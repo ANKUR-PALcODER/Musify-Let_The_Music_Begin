@@ -7,28 +7,24 @@ console.log(songname.innerText);
 let audioelement = new Audio('');
 console.log(audioelement.src);
 let masterPlay = document.getElementById('masterplay');
-// console.log(masterPlay);
 let progress = document.getElementById('progress');
 let gif = document.getElementById('gif');
 console.log(gif);
 let songlist = Array.from(document.getElementsByClassName('songs'));
-// console.log(songlist);
 let songplay = Array.from(document.getElementsByClassName('masterPlay'));
 let alert = document.getElementById('alert');
-// console.log(typeof alert);
-// console.log(alert);
 let alertbtn = document.getElementsByClassName('alertbtn');
 
 let songs = [
     { name: 'K/DA POP/STARS', filepath: 'songs/1.mp3', coverpath: './covers/1.jpg', duration: '3.22' },
-    { name: 'Summer Feelings', filepath: 'songs/2.mp3', coverpath: 'covers/3.jpg', duration: '2.40' },
-    { name: 'Main Dhoondne Ko', filepath: 'songs/3.mp3', coverpath: 'covers/4.jpg', duration: '4.32' },
-    { name: 'Brave Shine', filepath: 'songs/4.mp3', coverpath: 'covers/5.jpg', duration: '3.52' },
-    { name: 'Apna Bana Le', filepath: 'songs/5.mp3', coverpath: 'covers/6.jpg', duration: '3.24' },
-    { name: 'Innocent of D', filepath: 'songs/6.mp3', coverpath: 'covers/7.jpg', duration: '4.01' },
-    { name: 'Fake Love', filepath: 'songs/7.mp3', coverpath: 'covers/8.jpg', duration: '6.21' },
-    { name: 'Chale Aana', filepath: 'songs/8.mp3', coverpath: 'covers/9.jpg', duration: '4.13' },
-    { name: 'Bloody Power Fame', filepath: 'songs/9.mp3', coverpath: 'covers/10.jpg', duration: '3.58' }
+    { name: 'Summer Feelings', filepath: 'songs/2.mp3', coverpath: 'covers/2.jpg', duration: '2.40' },
+    { name: 'Main Dhoondne Ko', filepath: 'songs/3.mp3', coverpath: 'covers/3.jpg', duration: '4.32' },
+    { name: 'Brave Shine', filepath: 'songs/4.mp3', coverpath: 'covers/4.jpg', duration: '3.52' },
+    { name: 'Apna Bana Le', filepath: 'songs/5.mp3', coverpath: 'covers/5.jpg', duration: '3.24' },
+    { name: 'Innocent of D', filepath: 'songs/6.mp3', coverpath: 'covers/6.jpg', duration: '4.01' },
+    { name: 'Fake Love', filepath: 'songs/7.mp3', coverpath: 'covers/7.jpg', duration: '6.21' },
+    { name: 'Chale Aana', filepath: 'songs/8.mp3', coverpath: 'covers/8.jpg', duration: '4.13' },
+    { name: 'Bloody Power Fame', filepath: 'songs/9.mp3', coverpath: 'covers/10.png', duration: '3.58' }
 ]
 
 // Master Play/Pause
@@ -142,6 +138,7 @@ Array.from(document.getElementsByClassName('songfont')).forEach((element) => {
         masterPlay.classList.remove('fa-play-circle');
         masterPlay.classList.add('fa-pause-circle');
         gif.style.opacity = 1;
+        
     });
 });
 
